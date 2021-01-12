@@ -14,11 +14,11 @@ WHERE yr = 1950;
 SELECT winner
 FROM nobel
 WHERE yr = 1962
-    and subject = 'Literature';
+      AND subject = 'Literature';
 ```
 <br></br>
 
-#### 3. Year and subject that 'Albert Einstein' won.
+#### 3. Year AND subject that 'Albert Einstein' won.
 ```SQL
 SELECT yr, subject
 FROM nobel
@@ -31,7 +31,7 @@ WHERE winner = 'Albert Einstein';
 SELECT winner
 FROM nobel
 WHERE subject = 'Peace' 
-    and yr >= 2000;
+      AND yr >= 2000;
 ```
 <br></br>
 
@@ -40,8 +40,8 @@ WHERE subject = 'Peace'
 SELECT * 
 FROM nobel
 WHERE yr >= 1980 
-    and yr <= 1989 
-    and subject = 'Literature';
+      AND yr <= 1989 
+      AND subject = 'Literature';
 ```
 <br></br>
 
@@ -50,9 +50,9 @@ WHERE yr >= 1980
 SELECT *
 FROM nobel
 WHERE winner in ('Theodore Roosevelt',
-    'Woodrow Wilson',
-    'Jimmy Carter',
-    'Barack Obama');
+      'Woodrow Wilson',
+      'Jimmy Carter',
+      'Barack Obama');
 ```
 <br></br>
 
@@ -68,18 +68,18 @@ WHERE winner like 'John%';
 ```SQL
 SELECT *
 FROM nobel
-WHERE (yr = 1980 and subject = 'Physics') 
-    or (yr = 1984 and subject = 'Chemistry');
+WHERE (yr = 1980 AND subject = 'Physics') 
+       OR (yr = 1984 AND subject = 'Chemistry');
 ```
 <br></br>
 
-#### 9. Data of winners for 1980 excluding Chemistry and Medicine.
+#### 9. Data of winners for 1980 excluding Chemistry AND Medicine.
 ```SQL
 SELECT *
 FROM nobel
 WHERE yr = 1980 
-    and not subject = 'Chemistry' 
-    and not subject = 'Medicine';
+      AND not subject = 'Chemistry' 
+      AND not subject = 'Medicine';
 ```
 <br></br>
 
@@ -87,8 +87,8 @@ WHERE yr = 1980
 ```SQL
 SELECT *
 FROM nobel
-WHERE (yr < 1910 and subject = 'Medicine') 
-    or (yr >= 2004 and subject = 'Literature');
+WHERE (yr < 1910 AND subject = 'Medicine') 
+       OR (yr >= 2004 AND subject = 'Literature');
 ```
 <br></br>
 
@@ -108,7 +108,7 @@ WHERE winner = 'EUGENE O''NEILL';
 ```
 <br></br>
 
-#### 13. Data of winners where winner starts with 'Sir' listed by most recent and name order.
+#### 13. Data of winners where winner starts with 'Sir' listed by most recent AND name order.
 ```SQL
 SELECT winner, yr, subject
 FROM nobel
@@ -116,14 +116,14 @@ WHERE winner like 'Sir%'
 ORDER BY yr desc, winner asc;
 ```
 
-#### 14. 1984 winners and subject ordered by subject and winner name. List Chemistry and Physics last.
+#### 14. 1984 winners AND subject ordered by subject AND winner name. List Chemistry AND Physics last.
 ```SQL
 SELECT winner, subject
 FROM nobel
 WHERE yr = 1984
 ORDER BY 
     CASE WHEN 
-        subject IN ('Physics','Chemistry') THEN 1 ELSE 0 END,
-        subject asc,
-        winner asc;
+         subject IN ('Physics','Chemistry') THEN 1 ELSE 0 END,
+         subject asc,
+         winner asc;
 ```
