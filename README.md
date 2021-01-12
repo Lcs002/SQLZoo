@@ -8,4 +8,6 @@
 
 #### 3. [SELECT within SELECT Tutorial](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial) **:** [*Answers*](SELECT_within_SELECT_Tutorial_answers.md)
 
+#### 4. [SUM and COUNT](https://sqlzoo.net/wiki/SUM_and_COUNT) **:** [*Answers*](SUM_and_COUNT_answers.md)
+
 #### 5. [The JOIN operation](https://sqlzoo.net/wiki/The_JOIN_operation) **:** [*Answers*](The_JOIN_operation_answers.md)
