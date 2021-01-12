@@ -17,7 +17,7 @@ WHERE game.id = 1012
 ```
 <br></br>
 
-#### 3. show the player, teamid, stadium and mdate for every German goal.
+#### 3. Show the player, teamid, stadium and mdate for every German goal.
 ```SQL
 SELECT goal.player, goal.teamid, game.stadium, game.mdate
 FROM goal INNER JOIN game ON (goal.matchid = game.id
