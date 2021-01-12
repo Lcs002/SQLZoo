@@ -15,3 +15,5 @@
 #### 6. [More JOIN operations](https://sqlzoo.net/wiki/More_JOIN_operations) **:** [*Answers*](More_JOIN_operations_answers.md)
 
 #### 7. [Using Null](https://sqlzoo.net/wiki/Using_Null) **:** [*Answers*](Using_Null_answers.md)
+
+#### 8. [Self join](https://sqlzoo.net/wiki/Self_join) **:** [*Answers*](Self_join_answers.md)
