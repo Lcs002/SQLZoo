@@ -1,4 +1,4 @@
-<h1>The JOIN operation</h1>
+<h1>The JOIN operation - Answers</h1>
 <br></br>
 
 #### 1. Show the matchid and player name for all goals scored by Germany.
