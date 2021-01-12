@@ -9,7 +9,7 @@ SELECT teacher.name
 ```
 <br></br>
 
-#### ~~ 2. Note the INNER JOIN misses the teachers with no department and the departments with no teacher. ~~
+#### ~~2. Note the INNER JOIN misses the teachers with no department and the departments with no teacher.~~
 ```SQL
 SELECT teacher.name, dept.name
   FROM teacher 
