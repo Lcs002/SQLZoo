@@ -12,4 +12,4 @@
 
 #### 5. [The JOIN operation](https://sqlzoo.net/wiki/The_JOIN_operation) **:** [*Answers*](The_JOIN_operation_answers.md)
 
-#### 6. [More JOIN](https://sqlzoo.net/wiki/More_JOIN_operations) **:** [*Answers*](More_JOIN_answers.md)
+#### 6. [More JOIN operations](https://sqlzoo.net/wiki/More_JOIN_operations) **:** [*Answers*](More_JOIN_operations_answers.md)
