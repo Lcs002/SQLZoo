@@ -45,20 +45,22 @@ SELECT id
 #### 6. Obtain the cast list for 'Casablanca'.
 ```SQL
 SELECT DISTINCT actor.name
-  FROM casting INNER JOIN actor ON (casting.movieid = (SELECT id
-                                                         FROM movie
-                                                        WHERE title = 'Casablanca')
-                                    AND casting.actorid = actor.id)
+  FROM casting 
+       INNER JOIN actor ON (casting.movieid = (SELECT id
+                                                 FROM movie
+                                                WHERE title = 'Casablanca')
+                            AND casting.actorid = actor.id)
 ```
 <br></br>
 
 #### 7. Obtain the cast list for the film 'Alien'
 ```SQL
 SELECT DISTINCT actor.name
-  FROM casting INNER JOIN actor ON (casting.movieid = (SELECT id
-                                                         FROM movie
-                                                        WHERE title = 'Alien')
-                                    AND casting.actorid = actor.id)
+  FROM casting 
+       INNER JOIN actor ON (casting.movieid = (SELECT id
+                                                 FROM movie
+                                                WHERE title = 'Alien')
+                            AND casting.actorid = actor.id)
 ```
 <br></br>
 
