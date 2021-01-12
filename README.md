@@ -6,4 +6,4 @@
 
 #### 2. [SELECT from Nobel Tutorial](https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial) **:** [*Answers*](SELECT_from_Nobel_Tutorial_answers.md)
 
-#### 2. [The JOIN operation](https://sqlzoo.net/wiki/The_JOIN_operation) **:** [*Answers*](The_JOIN_operation_answers.md)
+#### 4. [The JOIN operation](https://sqlzoo.net/wiki/The_JOIN_operation) **:** [*Answers*](The_JOIN_operation_answers.md)
