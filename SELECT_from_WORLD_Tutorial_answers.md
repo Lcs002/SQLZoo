@@ -37,8 +37,8 @@ WHERE continent = 'South America';
 SELECT name, population 
 FROM world
 WHERE name in ('France',
-    'Germany',
-    'Italy');
+      'Germany',
+      'Italy');
 ```
 <br></br>
 
@@ -55,7 +55,7 @@ WHERE name like '%United%';
 SELECT name, population, area 
 FROM world 
 WHERE area > 3000000 
-    or population > 250000000;
+      or population > 250000000;
 ```
 <br></br>
 
@@ -64,9 +64,9 @@ WHERE area > 3000000
 SELECT name, population, area 
 FROM world 
 WHERE population > 250000000 
-    and not area > 3000000 
-    or not population > 250000000 
-    and area > 3000000;
+      and not area > 3000000 
+      or not population > 250000000 
+      and area > 3000000;
 ```
 <br></br>
 
@@ -99,7 +99,7 @@ WHERE length(capital) = length (name);
 SELECT name, capital 
 FROM world
 WHERE left(name,1) = left(capital,1) 
-    and name != capital;
+      and name != capital;
 ```
 <br></br>
 
@@ -108,9 +108,9 @@ WHERE left(name,1) = left(capital,1)
 SELECT name 
 FROM world 
 WHERE name not like '% %' 
-    and name like '%a%' 
-    and name like '%e%' 
-    and name like '%i%' 
-    and name like '%o%' 
-    and name like '%u%';
+      and name like '%a%' 
+      and name like '%e%' 
+      and name like '%i%' 
+      and name like '%o%' 
+      and name like '%u%';
 ```
