@@ -20,7 +20,8 @@ SELECT game.id, game.stadium, game.team1, game.team2
 #### 3. Show the player, teamid, stadium and mdate for every German goal.
 ```SQL
 SELECT goal.player, goal.teamid, game.stadium, game.mdate
-  FROM goal INNER JOIN game ON (goal.matchid = game.id
+  FROM goal 
+       INNER JOIN game ON (goal.matchid = game.id
                                 AND goal.teamid = 'GER')
 ```
 <br></br>
@@ -74,7 +75,8 @@ SELECT DISTINCT goal.player
 #### 9. Show teamname and the total number of goals scored.
 ```SQL
   SELECT max( eteam.teamname ), count( eteam.teamname ) AS GOLS
-    FROM eteam INNER JOIN goal ON (eteam.id = goal.teamid)
+    FROM eteam 
+         INNER JOIN goal ON (eteam.id = goal.teamid)
 GROUP BY eteam.teamname
 ```
 <br></br>
