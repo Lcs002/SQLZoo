@@ -126,6 +126,11 @@ SELECT DISTINCT endStops.name, endRoute.company, endRoute.num
 
 #### 10. Find the routes involving two buses that can go from Craiglockhart to Lochend. Show the bus no. and company for the first bus, the name of the stop for the transfer, and the bus no. and company for the second bus.
 ```SQL
-
+SELECT DISTINCT route1.num, route1.company, stops2.name, stops3.name, route2.num, route2.company
+  FROM stops stops2
+       INNER JOIN route route1 ON (route1.stop IN (stops2.id))
+       INNER JOIN stops stops1 ON (stops1.id = route1.stop)
+       INNER JOIN route route2 ON (route2.stop IN (stops2.id))
+       INNER JOIN stops stops3 ON (stops3.id = route2.stop)
 ```
 <br></br>
