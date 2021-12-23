@@ -22,7 +22,7 @@ SELECT game.id, game.stadium, game.team1, game.team2
 SELECT goal.player, goal.teamid, game.stadium, game.mdate
   FROM goal 
        INNER JOIN game ON (goal.matchid = game.id
-                                AND goal.teamid = 'GER')
+                           AND goal.teamid = 'GER')
 ```
 <br></br>
 
@@ -83,7 +83,7 @@ GROUP BY eteam.teamname
 
 #### 10. Show the stadium and the number of goals scored in each stadium.
 ```SQL
-  SELECT game.stadium, count(game.stadium) AS GOLS
+  SELECT game.stadium, count( game.stadium ) AS GOLS
     FROM game 
          INNER JOIN goal ON (game.id = goal.matchid)
 GROUP BY game.stadium
